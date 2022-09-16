@@ -12,13 +12,13 @@ func main() {
 	if err != nil {
 		fmt.Printf("An error occurred setting twitter handler: %s\n", err.Error())
 	}
-	// name1 := Name{First: "James", Last: "Wilson"}
+	// name1 := organization.Name{First: "James", Last: "Wilson"}
 	// name2 := Name{First: "James", Last: "Wilson"}
 
-	ssn := organization.NewSocialSecurityNumber("123-45-6789")
-	eu := organization.NewEuropeanUnionIdentifier("12345", "France")
+	// ssn := organization.NewSocialSecurityNumber("123-45-6789")
+	// eu := organization.NewEuropeanUnionIdentifier("12345", "France")
 
-	if ssn == eu {
-		println("We match")
-	}
+	// if name1 == (organization.Name{}) {
+	// 	println("We match")
+	// }
 }

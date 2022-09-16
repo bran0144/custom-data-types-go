@@ -8,7 +8,7 @@ import (
 
 type Handler struct {
 	handle string
-	name string
+	name   string
 }
 
 type TwitterHandler string
@@ -42,7 +42,7 @@ func (ssn socialSecurityNumber) Country() string {
 }
 
 type europeanUnionIdentifier struct {
-	id string
+	id      string
 	country string
 }
 
@@ -63,7 +63,7 @@ func (eui europeanUnionIdentifier) Country() string {
 
 type Name struct {
 	First string
-	last string
+	last  string
 }
 
 func (n Name) FullName() string {
@@ -76,8 +76,8 @@ type Employee struct {
 
 type Person struct {
 	Name
-	First string
-	last string
+	First          string
+	last           string
 	twitterHandler TwitterHandler
 	Citizen
 }
@@ -86,7 +86,7 @@ func NewPerson(firstName, lastName string, citizen Citizen) Person {
 	return Person{
 		Name: Name{
 			First: firstName,
-			last: lastName,
+			last:  lastName,
 		},
 		Citizen: citizen,
 	}
