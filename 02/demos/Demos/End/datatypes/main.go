@@ -1,13 +1,14 @@
 package main
 
 import (
-	"datatypes/organization"
+	"dataypes/organization"
 	"fmt"
 )
 
 func main() {
 	p := organization.NewPerson("James", "Wilson")
 	err := p.SetTwitterHandler("@jam_wils")
+	fmt.Printf("%T\n", organization.TwitterHandler("test"))
 	if err != nil {
 		fmt.Printf("An error occurred setting twitter handler: %s\n", err.Error())
 	}
